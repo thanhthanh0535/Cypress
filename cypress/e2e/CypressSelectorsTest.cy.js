@@ -19,7 +19,12 @@ describe('Cypress Selectors Suite', () => {
         cy.get('#searchform [name="search"]').type('Ho Chi Minh City');
         cy.get('#searchform button.cdx-button').click();
         
+        //contains selector
+        cy.contains('Ho Chi Minh City');
+
+        cy.get('#ca-talk > a').click();
+
+
+
     });
-
-
  });
