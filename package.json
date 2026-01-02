@@ -1,8 +1,9 @@
 {
   "devDependencies": {
-    "cypress": "^15.8.1"
+    "cypress": "^15.8.1",
+    "cypress-xpath": "^2.0.1"
   },
-  "scripts":{
+  "scripts": {
     "cypress:open": "cypress open"
   }
 }

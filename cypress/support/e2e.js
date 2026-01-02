@@ -24,3 +24,4 @@ if (!app.document.head.querySelector('[data-hide-command-log-request]')){
     style.setAttribute('data-hide-command-log-request', '');
     app.document.head.appendChild(style);
 }
+require('cypress-xpath');

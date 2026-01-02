@@ -8,6 +8,8 @@ describe('Test Suite 1', () => {
     cy.get('#center [name="search_query"]').type('JavaScript Tutorial')
     cy.get('#center button.ytSearchboxComponentSearchButton div').click();
     cy.log("Test1 is Ended");
+
+    
     
 
   })
