@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+
 describe('Test Suite 1', () => {
   it('My First Test', () => {
 
@@ -8,6 +8,7 @@ describe('Test Suite 1', () => {
     cy.get('#center [name="search_query"]').type('JavaScript Tutorial')
     cy.get('#center button.ytSearchboxComponentSearchButton div').click();
     cy.log("Test1 is Ended");
+    
 
   })
     it('My First Test 2', () => {
