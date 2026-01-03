@@ -8,6 +8,7 @@ describe('Hooks Test Suite', () => {
 
     beforeEach('Running before each test', () => {
         cy.log('This is executed before each test case');
+        cy.visit('https://en.wikipedia.org/wiki/Vietnam')
     })
     afterEach('Running after each test', () => {
         cy.log('This is executed after each test case');
@@ -29,7 +30,7 @@ describe('Hooks Test Suite', () => {
         })
     })
     it('Assertions2', function() {
-    cy.visit('https://en.wikipedia.org/wiki/Vietnam')
+    //cy.visit('https://en.wikipedia.org/wiki/Vietnam')
     //cy.get('#firstHeading span.mw-page-title-main').click();
 
     cy.get('#firstHeading span.mw-page-title-main').then((element)=>{
