@@ -1,5 +1,5 @@
 describe('Test Suite 2', () => {
-  it('Module 2Test', () => {
+  it('Module 2 Test', () => {
 
     cy.log("Test1 is Started");
     cy.visit('https://www.youtube.com')
