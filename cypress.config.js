@@ -4,6 +4,7 @@ module.exports = defineConfig({
   watchForFileChanges: false,
   chromeWebSecurity: false,
   EdgeWebSecurity: false,
+  //multiple: true,
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'cypress/reports'},
