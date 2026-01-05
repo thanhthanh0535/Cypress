@@ -4,9 +4,13 @@ module.exports = defineConfig({
   watchForFileChanges: false,
   chromeWebSecurity: false,
   EdgeWebSecurity: false,
+  reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    reportDir: 'cypress/reports'},
+  
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    require('cypress-mochawesome-reporter/plugin')(on)
+    }
   },
 });

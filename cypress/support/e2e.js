@@ -24,4 +24,8 @@ if (!app.document.head.querySelector('[data-hide-command-log-request]')){
     style.setAttribute('data-hide-command-log-request', '');
     app.document.head.appendChild(style);
 }
+//xpath
 require('cypress-xpath');
+
+//mochawesome reporting
+import 'cypress-mochawesome-reporter/register';
