@@ -5,6 +5,7 @@ module.exports = defineConfig({
   chromeWebSecurity: false,
   EdgeWebSecurity: false,
   //multiple: true,
+  video: true,
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'cypress/reports'},
